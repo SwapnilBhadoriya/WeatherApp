@@ -1,0 +1,14 @@
+<div class="card text-center text-bg-dark border-info mb-3" style="max-width: 18rem">
+  <div class="card-header">
+    <strong>{{ data.name }}</strong>
+  </div>
+  <div class="card-body text-bg-white">
+    <img [src]="url" class="img-fluid" alt="..." />
+    <h3 class="card-title">{{ temp }}&deg;C</h3>
+    <div class="card-text">
+        <h2>{{data.weather[0].main}} in {{data.name}}</h2>
+
+        <h6>Description : {{data.weather[0].description}}</h6>
+    </div>
+  </div>
+</div>

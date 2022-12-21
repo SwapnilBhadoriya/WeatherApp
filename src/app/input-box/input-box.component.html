@@ -1,0 +1,22 @@
+<div class="card text-bg-primary bg-dark p-2 d-flex justify-content-around align-items-center" style="border:0 ;margin:10px auto;height:80vh; width: 80vw;">
+
+    <h1>Weather App</h1>
+    <div class="input-group input-group-lg">
+      <!-- <span class="input-group-text" id="inputGroup-sizing-lg">Large</span> -->
+      <input #q 
+        type="text"
+        class="form-control"
+        placeholder="Search for a city"
+        aria-label="Sizing example input"
+        aria-describedby="inputGroup-sizing-lg"
+        [value]="city"
+      />
+      <!-- <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+        Button
+      </button> -->
+    </div>
+
+    <button type="button" class="btn btn-dark btn-outline-info" (click)="getData(q)">Check</button>
+    <app-output-box  *ngIf="data" [data]="data"></app-output-box>
+  </div>
+  
